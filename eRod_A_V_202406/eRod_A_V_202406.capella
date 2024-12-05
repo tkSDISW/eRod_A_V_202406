@@ -8873,9 +8873,6 @@
                 id="63bbfa80-da28-47f8-af2d-e42a1b6db12f" name="Speed">
               <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
                   id="bd787efe-c7b1-40af-a1dc-08fc434a50f0" name="Max" value="255.0"/>
-              <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
-                  id="ad162161-62f3-4f63-ad13-ff37d5985b1f" name="Max" summary="The value should be less than or equal to"
-                  value="10.0"/>
               <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
                   id="bec7ff12-1a82-4df9-935c-0aba7bb5722f" name="Units" value="km/h"/>
               <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
