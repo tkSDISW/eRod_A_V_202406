@@ -1,0 +1,2902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-2.xsd http://autosar.org/schema/r4.2 autosar_4-2-2.xsd http://www.w3.org/XML/1998/namespace xml.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ComponentType</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ApplicationSwComponentType</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_ACC_CONTROLLER</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="5179">
+                  <SHORT-NAME>SenderOfAccCtrl1</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/BrakeSwitch3_iface/BrakeSwitch3_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/BrakeSwitch3_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="5192">
+                  <SHORT-NAME>ReceiverOfAccCtrl2</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/AccStateTargetSet_iface/AccStateTargetSet_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/AccStateTargetSet_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="5206">
+                  <SHORT-NAME>ReceiverOfAccCtrl3</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/PositionVelocity_iface/PositionVelocity_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/PositionVelocity_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F6_ADAS</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="6228">
+                  <SHORT-NAME>SenderOfPORT8</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_09_iface/Body_ADAS_09_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_09_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="6241">
+                  <SHORT-NAME>SenderOfPORT9</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_02_iface/Body_ADAS_02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_02_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6046">
+                  <SHORT-NAME>ReceiverOfPORT10</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_01_iface/MMI_ADAS_01_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MMI_ADAS_01_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6060">
+                  <SHORT-NAME>ReceiverOfPORT11</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_02_iface/MMI_ADAS_02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MMI_ADAS_02_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6074">
+                  <SHORT-NAME>ReceiverOfPORT12</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_03_iface/MMI_ADAS_03_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MMI_ADAS_03_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6088">
+                  <SHORT-NAME>ReceiverOfPORT13</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_03_iface/Body_ADAS_03_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_03_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6102">
+                  <SHORT-NAME>ReceiverOfPORT16</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_04_iface/Body_ADAS_04_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_04_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6116">
+                  <SHORT-NAME>ReceiverOfPORT17</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_05_iface/Body_ADAS_05_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_05_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6130">
+                  <SHORT-NAME>ReceiverOfPORT1</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_08_iface/Body_ADAS_08_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_08_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6144">
+                  <SHORT-NAME>ReceiverOfPORT2</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_02_iface/Safety_ADAS_02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_02_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6158">
+                  <SHORT-NAME>ReceiverOfPORT3</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_07_iface/Body_ADAS_07_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_07_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6172">
+                  <SHORT-NAME>ReceiverOfPORT4</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_06_iface/Body_ADAS_06_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_06_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6186">
+                  <SHORT-NAME>ReceiverOfPORT5</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_03_iface/Safety_ADAS_03_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_03_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6200">
+                  <SHORT-NAME>ReceiverOfPORT6</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_04_iface/Safety_ADAS_04_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_04_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6214">
+                  <SHORT-NAME>ReceiverOfPORT7</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_01_iface/Safety_ADAS_01_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_01_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_MaintainDistance</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="6256">
+                  <SHORT-NAME>SenderOfMaintainDistance</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MaintainDistance02_iface/MaintainDistance02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MaintainDistance02_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>DataType</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ApplicationPrimitiveDataTypes</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="4637">
+              <SHORT-NAME>dt_id_compu_meth_0001_UINT20</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="4629">
+              <SHORT-NAME>dt_id_compu_meth_0001_UINT5</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT5</BASE-TYPE-REF>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="4653">
+              <SHORT-NAME>dt_id_compu_meth_0001_UINT10</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT10</BASE-TYPE-REF>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="4669">
+              <SHORT-NAME>dt_id_compu_meth_0001_UINT8</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT8</BASE-TYPE-REF>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="4645">
+              <SHORT-NAME>dt_id_compu_meth_0001_UINT4</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT4</BASE-TYPE-REF>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="122c3f90-6887-4fa3-af80-6ace36fb9130">
+              <SHORT-NAME>dt_id_compu_meth_0001_BOOL</SHORT-NAME>
+              <CATEGORY>BOOLEAN</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>DataTypeSemantics</SHORT-NAME>
+          <ELEMENTS>
+            <COMPU-METHOD UUID="4583">
+              <SHORT-NAME>id_compu_meth_0001</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Identical conversion (Physical == Internal). Used by default if no other information</L-2>
+              </DESC>
+              <CATEGORY>TEXTTABLE</CATEGORY>
+            </COMPU-METHOD>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+              <ELEMENTS>
+                <SW-BASE-TYPE UUID="4616">
+                  <SHORT-NAME>UINT20</SHORT-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <BASE-TYPE-SIZE>20</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                  <NATIVE-DECLARATION>unsigned short</NATIVE-DECLARATION>
+                </SW-BASE-TYPE>
+                <SW-BASE-TYPE UUID="4604">
+                  <SHORT-NAME>UINT5</SHORT-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <BASE-TYPE-SIZE>5</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                </SW-BASE-TYPE>
+                <SW-BASE-TYPE UUID="4612">
+                  <SHORT-NAME>UINT10</SHORT-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <BASE-TYPE-SIZE>10</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                  <NATIVE-DECLARATION>unsigned short</NATIVE-DECLARATION>
+                </SW-BASE-TYPE>
+                <SW-BASE-TYPE UUID="4608">
+                  <SHORT-NAME>UINT8</SHORT-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                </SW-BASE-TYPE>
+                <SW-BASE-TYPE UUID="4600">
+                  <SHORT-NAME>UINT4</SHORT-NAME>
+                  <CATEGORY>FIXED_LENGTH</CATEGORY>
+                  <BASE-TYPE-SIZE>4</BASE-TYPE-SIZE>
+                  <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                </SW-BASE-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>DataTypeMappingSet</SHORT-NAME>
+          <ELEMENTS>
+            <DATA-TYPE-MAPPING-SET UUID="4687">
+              <SHORT-NAME>id_data_type_map_set_0002</SHORT-NAME>
+              <DATA-TYPE-MAPS>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_BOOL</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT10</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT4</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT5</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+                <DATA-TYPE-MAP>
+                  <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT8</APPLICATION-DATA-TYPE-REF>
+                  <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                </DATA-TYPE-MAP>
+              </DATA-TYPE-MAPS>
+            </DATA-TYPE-MAPPING-SET>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>ECUExtractADAS</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ComponentType</SHORT-NAME>
+          <ELEMENTS>
+            <COMPOSITION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>ECUFlatView</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="8628">
+                  <SHORT-NAME>id_p_port_prot_0095</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_02_iface/Body_ADAS_02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_02_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="8725">
+                  <SHORT-NAME>id_p_port_prot_0102</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_09_iface/Body_ADAS_09_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_09_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="8738">
+                  <SHORT-NAME>id_p_port_prot_0103</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/BrakeSwitch3_iface/BrakeSwitch3_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/BrakeSwitch3_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <P-PORT-PROTOTYPE UUID="8793">
+                  <SHORT-NAME>id_p_port_prot_0107</SHORT-NAME>
+                  <PROVIDED-COM-SPECS>
+                    <NONQUEUED-SENDER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MaintainDistance02_iface/MaintainDistance02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-SENDER-COM-SPEC>
+                  </PROVIDED-COM-SPECS>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MaintainDistance02_iface</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8614">
+                  <SHORT-NAME>id_r_port_prot_0094</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/AccStateTargetSet_iface/AccStateTargetSet_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/AccStateTargetSet_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8641">
+                  <SHORT-NAME>id_r_port_prot_0096</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_03_iface/Body_ADAS_03_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_03_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8655">
+                  <SHORT-NAME>id_r_port_prot_0097</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_04_iface/Body_ADAS_04_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_04_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8669">
+                  <SHORT-NAME>id_r_port_prot_0098</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_05_iface/Body_ADAS_05_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_05_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8683">
+                  <SHORT-NAME>id_r_port_prot_0099</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_06_iface/Body_ADAS_06_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_06_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8697">
+                  <SHORT-NAME>id_r_port_prot_0100</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_07_iface/Body_ADAS_07_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_07_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8711">
+                  <SHORT-NAME>id_r_port_prot_0101</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_08_iface/Body_ADAS_08_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Body_ADAS_08_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8751">
+                  <SHORT-NAME>id_r_port_prot_0104</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_01_iface/MMI_ADAS_01_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MMI_ADAS_01_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8765">
+                  <SHORT-NAME>id_r_port_prot_0105</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_02_iface/MMI_ADAS_02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MMI_ADAS_02_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8779">
+                  <SHORT-NAME>id_r_port_prot_0106</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_03_iface/MMI_ADAS_03_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/MMI_ADAS_03_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8806">
+                  <SHORT-NAME>id_r_port_prot_0108</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/PositionVelocity_iface/PositionVelocity_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/PositionVelocity_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8820">
+                  <SHORT-NAME>id_r_port_prot_0109</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_01_iface/Safety_ADAS_01_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_01_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8834">
+                  <SHORT-NAME>id_r_port_prot_0110</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_02_iface/Safety_ADAS_02_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_02_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8848">
+                  <SHORT-NAME>id_r_port_prot_0111</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_03_iface/Safety_ADAS_03_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_03_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="8862">
+                  <SHORT-NAME>id_r_port_prot_0112</SHORT-NAME>
+                  <REQUIRED-COM-SPECS>
+                    <NONQUEUED-RECEIVER-COM-SPEC>
+                      <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_04_iface/Safety_ADAS_04_vdp</DATA-ELEMENT-REF>
+                      <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                      <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                      <ALIVE-TIMEOUT>0.0</ALIVE-TIMEOUT>
+                      <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                      <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                      <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                      <INIT-VALUE>
+                        <CONSTANT-REFERENCE>
+                          <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Constants/val_0</CONSTANT-REF>
+                        </CONSTANT-REFERENCE>
+                      </INIT-VALUE>
+                    </NONQUEUED-RECEIVER-COM-SPEC>
+                  </REQUIRED-COM-SPECS>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Safety_ADAS_04_iface</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="8276">
+                  <SHORT-NAME>cswc_MaintainDistance</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentType/ApplicationSwComponentType/appswc_MaintainDistance</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="7922">
+                  <SHORT-NAME>cswc_F6_ADAS</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="6443">
+                  <SHORT-NAME>cswc_ACC_CONTROLLER</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+              <CONNECTORS>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01221_cswc_ACC_CONTROLLER</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_ACC_CONTROLLER</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/SenderOfAccCtrl1</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0103</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01211_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/SenderOfPORT8</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0102</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01141_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/SenderOfPORT9</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0095</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01261_cswc_MaintainDistance</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_MaintainDistance</CONTEXT-COMPONENT-REF>
+                      <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_MaintainDistance/SenderOfMaintainDistance</TARGET-P-PORT-REF>
+                    </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0107</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01131_cswc_ACC_CONTROLLER</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_ACC_CONTROLLER</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/ReceiverOfAccCtrl2</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0094</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01271_cswc_ACC_CONTROLLER</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_ACC_CONTROLLER</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/ReceiverOfAccCtrl3</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0108</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01231_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT10</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0104</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01241_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT11</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0105</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01251_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT12</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0106</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01151_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT13</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0096</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01161_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT16</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0097</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01171_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT17</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0098</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01201_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT1</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0101</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01291_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT2</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0110</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01191_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT3</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0100</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01181_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT4</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0099</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01301_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT5</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0111</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01311_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT6</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0112</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+                <DELEGATION-SW-CONNECTOR>
+                  <SHORT-NAME>id_deleg_sw_conn_01281_cswc_F6_ADAS</SHORT-NAME>
+                  <INNER-PORT-IREF>
+                    <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</CONTEXT-COMPONENT-REF>
+                      <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/ReceiverOfPORT7</TARGET-R-PORT-REF>
+                    </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  </INNER-PORT-IREF>
+                  <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0109</OUTER-PORT-REF>
+                </DELEGATION-SW-CONNECTOR>
+              </CONNECTORS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="3bcfb4c4-9663-3593-bbb2-08ce0151e4b8">
+          <SHORT-NAME>VehicleProject</SHORT-NAME>
+          <ELEMENTS>
+            <SYSTEM>
+              <SHORT-NAME>Physical_Platform_4Door</SHORT-NAME>
+              <CATEGORY>ECU_EXTRACT</CATEGORY>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="MentorCapital">
+                    <SD GID="Version">ARXML Link version 0.79A</SD>
+                  </SDG>
+                  <SDG GID="CapitalNetworks">
+                    <SD GID="Version">CN_2020.1.20200730-1113 CN_2020.1_20200730-1113</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <ECU-EXTRACT-VERSION>0.0.0;20/11/05, ECU.Cfg.Ver: 0</ECU-EXTRACT-VERSION>
+              <FIBEX-ELEMENTS>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/ECUSystem/ADAS</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-CLUSTER">/VehicleTopology/CAN_ACC</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/ADAS_ACC_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu6</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBrakeSwitch3</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isMaintainDistance</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/Radar_to_ADAS_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu4</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isPositionVelocity</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/PowertrainB_to_ADAS_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu8</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isAccStateTargetSet</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/ADAS_BODY_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu7</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_02</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_09</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/BodyRear_to_ADAS_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu1</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_03</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_04</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_05</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/Body_to_ADAS_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu2</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_06</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_07</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_08</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/MMI_to_ADAS_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu3</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isMMI_ADAS_01</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isMMI_ADAS_02</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isMMI_ADAS_03</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="CAN-FRAME">/Communication/Frame/Safety_to_ADAS_Frame</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu5</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_01</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_02</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_03</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_04</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxSPG_ctrl_ADAS_CAN_BODY</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxMPG_ctrl_ADAS_CAN_BODY</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxSPG_ctrl_ADAS_CAN_ACC</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxMPG_ctrl_ADAS_CAN_ACC</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxSPG_ctrl_ADAS_CAN_BODY</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxMPG_ctrl_ADAS_CAN_BODY</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxSPG_ctrl_ADAS_CAN_SAFETY</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxMPG_ctrl_ADAS_CAN_SAFETY</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxSPG_ctrl_ADAS_CAN_ACC</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+                <FIBEX-ELEMENT-REF-CONDITIONAL>
+                  <FIBEX-ELEMENT-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxMPG_ctrl_ADAS_CAN_ACC</FIBEX-ELEMENT-REF>
+                </FIBEX-ELEMENT-REF-CONDITIONAL>
+              </FIBEX-ELEMENTS>
+              <MAPPINGS>
+                <SYSTEM-MAPPING>
+                  <SHORT-NAME>id_syste_mapp_0875</SHORT-NAME>
+                  <DATA-MAPPINGS>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0095</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_02_iface/Body_ADAS_02_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_02</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0102</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_09_iface/Body_ADAS_09_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_09</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0103</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/BrakeSwitch3_iface/BrakeSwitch3_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/BrakeSwitch3</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="P-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_p_port_prot_0107</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MaintainDistance02_iface/MaintainDistance02_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MaintainDistance</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0094</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/AccStateTargetSet_iface/AccStateTargetSet_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/AccStateTargetSet</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0096</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_03_iface/Body_ADAS_03_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_03</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0097</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_04_iface/Body_ADAS_04_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_04</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0098</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_05_iface/Body_ADAS_05_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_05</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0099</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_06_iface/Body_ADAS_06_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_06</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0100</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_07_iface/Body_ADAS_07_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_07</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0101</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Body_ADAS_08_iface/Body_ADAS_08_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_08</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0104</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_01_iface/MMI_ADAS_01_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MMI_ADAS_01</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0105</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_02_iface/MMI_ADAS_02_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MMI_ADAS_02</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0106</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/MMI_ADAS_03_iface/MMI_ADAS_03_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MMI_ADAS_03</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0108</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/PositionVelocity_iface/PositionVelocity_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/PositionVelocity</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0109</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_01_iface/Safety_ADAS_01_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_01</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0110</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_02_iface/Safety_ADAS_02_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_02</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0111</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_03_iface/Safety_ADAS_03_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_03</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                    <SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                      <DATA-ELEMENT-IREF>
+                        <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                        <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/id_r_port_prot_0112</CONTEXT-PORT-REF>
+                        <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Safety_ADAS_04_iface/Safety_ADAS_04_vdp</TARGET-DATA-PROTOTYPE-REF>
+                      </DATA-ELEMENT-IREF>
+                      <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_04</SYSTEM-SIGNAL-REF>
+                    </SENDER-RECEIVER-TO-SIGNAL-MAPPING>
+                  </DATA-MAPPINGS>
+                  <SW-IMPL-MAPPINGS>
+                    <SWC-TO-IMPL-MAPPING UUID="895917b0-ec56-47a5-be03-e992ce1f1bc9">
+                      <SHORT-NAME>SwcToImplMapping</SHORT-NAME>
+                      <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ComponentType/ApplicationSwComponentType/Impl_appswc_ACC_CONTROLLER</COMPONENT-IMPLEMENTATION-REF>
+                      <COMPONENT-IREFS>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_ACC_CONTROLLER</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                      </COMPONENT-IREFS>
+                    </SWC-TO-IMPL-MAPPING>
+                    <SWC-TO-IMPL-MAPPING UUID="43899606-b65a-4d0e-8ccd-1bf05f4230ac">
+                      <SHORT-NAME>SwcToImplMapping1</SHORT-NAME>
+                      <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ComponentType/ApplicationSwComponentType/Impl_appswc_F6_ADAS</COMPONENT-IMPLEMENTATION-REF>
+                      <COMPONENT-IREFS>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                      </COMPONENT-IREFS>
+                    </SWC-TO-IMPL-MAPPING>
+                    <SWC-TO-IMPL-MAPPING UUID="0e95e786-0e2f-40d1-ba3c-bc4987047448">
+                      <SHORT-NAME>SwcToImplMapping2</SHORT-NAME>
+                      <COMPONENT-IMPLEMENTATION-REF DEST="SWC-IMPLEMENTATION">/ComponentType/ApplicationSwComponentType/Impl_appswc_MaintainDistance</COMPONENT-IMPLEMENTATION-REF>
+                      <COMPONENT-IREFS>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_MaintainDistance</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                      </COMPONENT-IREFS>
+                    </SWC-TO-IMPL-MAPPING>
+                  </SW-IMPL-MAPPINGS>
+                  <SW-MAPPINGS>
+                    <SWC-TO-ECU-MAPPING>
+                      <SHORT-NAME>id_swc_to_ecu_mapp_0876</SHORT-NAME>
+                      <COMPONENT-IREFS>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_MaintainDistance</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_F6_ADAS</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                        <COMPONENT-IREF>
+                          <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECUExtractADAS/VehicleProject/Physical_Platform_4Door/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                          <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECUExtractADAS/ComponentType/ECUFlatView/cswc_ACC_CONTROLLER</TARGET-COMPONENT-REF>
+                        </COMPONENT-IREF>
+                      </COMPONENT-IREFS>
+                      <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/ECUSystem/ADAS</ECU-INSTANCE-REF>
+                    </SWC-TO-ECU-MAPPING>
+                  </SW-MAPPINGS>
+                </SYSTEM-MAPPING>
+              </MAPPINGS>
+              <ROOT-SOFTWARE-COMPOSITIONS>
+                <ROOT-SW-COMPOSITION-PROTOTYPE>
+                  <SHORT-NAME>RootSwCompositionPrototype</SHORT-NAME>
+                  <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/ECUExtractADAS/ComponentType/ECUFlatView</SOFTWARE-COMPOSITION-TREF>
+                </ROOT-SW-COMPOSITION-PROTOTYPE>
+              </ROOT-SOFTWARE-COMPOSITIONS>
+              <SYSTEM-VERSION>0.0.0; Export  Project: Automotive EE platform  Design: Physical Platform 4Door Version: RevC 2020-11-04 23-06-48 ARXML Link version 0.79A  RemoveEmptyBusesAndECus : false AllowedCarrierTypes : Electrical, Optical, Wireless AllowedFunctionalTypes : Software Allowedimplementations :  AllowedPlatformTypes : ECU AlwaysExportedVarianceSectionName : All ApplyFilterToObjectTypes : true BuildImplementationDataType : false ConsiderVariance : true ECUVariedWidePrefix : VAWI_ ECUWidePrefix : WID_ IncludeOTIData : true IncludeSoftSignals : false OutputOptionBasedVariance : true PreferSwComponentPrototypePerECU : false RecordDetailOfTimingData : false SplitSignalsWithMultipleSenders : false UseDefaultFilterTypes : true SimplerInterfacePattern : true</SYSTEM-VERSION>
+            </SYSTEM>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>ECUSystem</SHORT-NAME>
+      <ELEMENTS>
+        <ECU-INSTANCE UUID="15234">
+          <SHORT-NAME>ADAS</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="eASEE"/>
+            </SDGS>
+          </ADMIN-DATA>
+          <ASSOCIATED-COM-I-PDU-GROUP-REFS>
+            <ASSOCIATED-COM-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxMPG_ctrl_ADAS_CAN_BODY</ASSOCIATED-COM-I-PDU-GROUP-REF>
+            <ASSOCIATED-COM-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxMPG_ctrl_ADAS_CAN_ACC</ASSOCIATED-COM-I-PDU-GROUP-REF>
+            <ASSOCIATED-COM-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxMPG_ctrl_ADAS_CAN_BODY</ASSOCIATED-COM-I-PDU-GROUP-REF>
+            <ASSOCIATED-COM-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxMPG_ctrl_ADAS_CAN_SAFETY</ASSOCIATED-COM-I-PDU-GROUP-REF>
+            <ASSOCIATED-COM-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxMPG_ctrl_ADAS_CAN_ACC</ASSOCIATED-COM-I-PDU-GROUP-REF>
+          </ASSOCIATED-COM-I-PDU-GROUP-REFS>
+          <COM-CONFIGURATION-GW-TIME-BASE>0.005</COM-CONFIGURATION-GW-TIME-BASE>
+          <COM-CONFIGURATION-RX-TIME-BASE>0.005</COM-CONFIGURATION-RX-TIME-BASE>
+          <COM-CONFIGURATION-TX-TIME-BASE>0.005</COM-CONFIGURATION-TX-TIME-BASE>
+          <COMM-CONTROLLERS>
+            <CAN-COMMUNICATION-CONTROLLER UUID="15242">
+              <SHORT-NAME>ctrl_ADAS_CAN_ACC</SHORT-NAME>
+              <CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                <CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+                  <CAN-CONTROLLER-ATTRIBUTES>
+                    <CAN-CONTROLLER-CONFIGURATION-REQUIREMENTS/>
+                  </CAN-CONTROLLER-ATTRIBUTES>
+                </CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+              </CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+            </CAN-COMMUNICATION-CONTROLLER>
+          </COMM-CONTROLLERS>
+          <CONNECTORS>
+            <CAN-COMMUNICATION-CONNECTOR UUID="15258">
+              <SHORT-NAME>conn_ADAS_CAN_ACC</SHORT-NAME>
+              <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/ECUSystem/ADAS/ctrl_ADAS_CAN_ACC</COMM-CONTROLLER-REF>
+              <ECU-COMM-PORT-INSTANCES>
+                <FRAME-PORT UUID="278ac360-e2b7-3556-b78b-d8477f67aa8c">
+                  <SHORT-NAME>FramePort_Out</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </FRAME-PORT>
+                <I-PDU-PORT UUID="30ff7330-6661-3ca4-b372-5d9a9489fb12">
+                  <SHORT-NAME>IPduPort_Out</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </I-PDU-PORT>
+                <I-SIGNAL-PORT UUID="59762f40-fe5a-3028-961f-aaa92f34bf12">
+                  <SHORT-NAME>SignalPort_Out</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                </I-SIGNAL-PORT>
+                <FRAME-PORT UUID="fd0210a7-f4e4-36bf-aa2b-47d9b453bfb2">
+                  <SHORT-NAME>FramePort_In</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </FRAME-PORT>
+                <I-PDU-PORT UUID="5e4f073e-76e7-3c28-90ea-2af236e5349d">
+                  <SHORT-NAME>IPduPort_In</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </I-PDU-PORT>
+                <I-SIGNAL-PORT UUID="a49912e0-a477-3484-8163-509e45ae9d3b">
+                  <SHORT-NAME>SignalPort_In</SHORT-NAME>
+                  <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                </I-SIGNAL-PORT>
+              </ECU-COMM-PORT-INSTANCES>
+            </CAN-COMMUNICATION-CONNECTOR>
+          </CONNECTORS>
+          <SLEEP-MODE-SUPPORTED>false</SLEEP-MODE-SUPPORTED>
+          <WAKE-UP-OVER-BUS-SUPPORTED>false</WAKE-UP-OVER-BUS-SUPPORTED>
+        </ECU-INSTANCE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>VehicleTopology</SHORT-NAME>
+      <ELEMENTS>
+        <CAN-CLUSTER UUID="16401">
+          <SHORT-NAME>CAN_ACC</SHORT-NAME>
+          <CAN-CLUSTER-VARIANTS>
+            <CAN-CLUSTER-CONDITIONAL>
+              <BAUDRATE>500000</BAUDRATE>
+              <PHYSICAL-CHANNELS>
+                <CAN-PHYSICAL-CHANNEL>
+                  <SHORT-NAME>id_can_phys_chan_0825</SHORT-NAME>
+                  <COMM-CONNECTORS>
+                    <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/ECUSystem/ADAS/conn_ADAS_CAN_ACC</COMMUNICATION-CONNECTOR-REF>
+                    </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                  </COMM-CONNECTORS>
+                  <FRAME-TRIGGERINGS>
+                    <CAN-FRAME-TRIGGERING UUID="30c32aed-7fdf-3582-b606-fa4258ca4074">
+                      <SHORT-NAME>FrTrADAS_ACC_Frame</SHORT-NAME>
+                      <FRAME-PORT-REFS>
+                        <FRAME-PORT-REF DEST="FRAME-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/FramePort_Out</FRAME-PORT-REF>
+                      </FRAME-PORT-REFS>
+                      <FRAME-REF DEST="CAN-FRAME">/Communication/Frame/ADAS_ACC_Frame</FRAME-REF>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING-REF-CONDITIONAL>
+                          <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/VehicleTopology/CAN_ACC/id_can_phys_chan_0825/PduTrSignalIPdu6</PDU-TRIGGERING-REF>
+                        </PDU-TRIGGERING-REF-CONDITIONAL>
+                      </PDU-TRIGGERINGS>
+                      <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                      <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                      <IDENTIFIER>261</IDENTIFIER>
+                    </CAN-FRAME-TRIGGERING>
+                    <CAN-FRAME-TRIGGERING UUID="202dcbaf-8841-3b8a-95c1-9017be2c07bb">
+                      <SHORT-NAME>FrTrRadar_to_ADAS_Frame</SHORT-NAME>
+                      <FRAME-PORT-REFS>
+                        <FRAME-PORT-REF DEST="FRAME-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/FramePort_In</FRAME-PORT-REF>
+                      </FRAME-PORT-REFS>
+                      <FRAME-REF DEST="CAN-FRAME">/Communication/Frame/Radar_to_ADAS_Frame</FRAME-REF>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING-REF-CONDITIONAL>
+                          <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/VehicleTopology/CAN_ACC/id_can_phys_chan_0825/PduTrSignalIPdu4</PDU-TRIGGERING-REF>
+                        </PDU-TRIGGERING-REF-CONDITIONAL>
+                      </PDU-TRIGGERINGS>
+                      <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                      <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                      <IDENTIFIER>513</IDENTIFIER>
+                    </CAN-FRAME-TRIGGERING>
+                    <CAN-FRAME-TRIGGERING UUID="6ab90a86-493f-30a5-8e9a-e4548e5f23c4">
+                      <SHORT-NAME>FrTrPowertrainB_to_ADAS_Frame</SHORT-NAME>
+                      <FRAME-PORT-REFS>
+                        <FRAME-PORT-REF DEST="FRAME-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/FramePort_In</FRAME-PORT-REF>
+                      </FRAME-PORT-REFS>
+                      <FRAME-REF DEST="CAN-FRAME">/Communication/Frame/PowertrainB_to_ADAS_Frame</FRAME-REF>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING-REF-CONDITIONAL>
+                          <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/VehicleTopology/CAN_ACC/id_can_phys_chan_0825/PduTrSignalIPdu8</PDU-TRIGGERING-REF>
+                        </PDU-TRIGGERING-REF-CONDITIONAL>
+                      </PDU-TRIGGERINGS>
+                      <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                      <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                      <IDENTIFIER>514</IDENTIFIER>
+                    </CAN-FRAME-TRIGGERING>
+                  </FRAME-TRIGGERINGS>
+                  <I-SIGNAL-TRIGGERINGS>
+                    <I-SIGNAL-TRIGGERING UUID="d263b42b-2d0f-3ddb-a916-216a5c90afa4">
+                      <SHORT-NAME>ISTrisBrakeSwitch3_0</SHORT-NAME>
+                      <I-SIGNAL-PORT-REFS>
+                        <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/SignalPort_Out</I-SIGNAL-PORT-REF>
+                      </I-SIGNAL-PORT-REFS>
+                      <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBrakeSwitch3</I-SIGNAL-REF>
+                    </I-SIGNAL-TRIGGERING>
+                    <I-SIGNAL-TRIGGERING UUID="b6da740c-b58e-3918-a9c0-523c25b30dd1">
+                      <SHORT-NAME>ISTrisMaintainDistance_0</SHORT-NAME>
+                      <I-SIGNAL-PORT-REFS>
+                        <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/SignalPort_Out</I-SIGNAL-PORT-REF>
+                      </I-SIGNAL-PORT-REFS>
+                      <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isMaintainDistance</I-SIGNAL-REF>
+                    </I-SIGNAL-TRIGGERING>
+                    <I-SIGNAL-TRIGGERING UUID="f063c9df-837c-34e3-9c77-ac667d120068">
+                      <SHORT-NAME>ISTrisPositionVelocity_0</SHORT-NAME>
+                      <I-SIGNAL-PORT-REFS>
+                        <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/SignalPort_In</I-SIGNAL-PORT-REF>
+                      </I-SIGNAL-PORT-REFS>
+                      <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isPositionVelocity</I-SIGNAL-REF>
+                    </I-SIGNAL-TRIGGERING>
+                    <I-SIGNAL-TRIGGERING UUID="b5b95f72-6617-3e38-a2d7-70525b92e237">
+                      <SHORT-NAME>ISTrisAccStateTargetSet_0</SHORT-NAME>
+                      <I-SIGNAL-PORT-REFS>
+                        <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/SignalPort_In</I-SIGNAL-PORT-REF>
+                      </I-SIGNAL-PORT-REFS>
+                      <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isAccStateTargetSet</I-SIGNAL-REF>
+                    </I-SIGNAL-TRIGGERING>
+                  </I-SIGNAL-TRIGGERINGS>
+                  <PDU-TRIGGERINGS>
+                    <PDU-TRIGGERING UUID="015e0a55-ceeb-36d6-9ae5-604dc906ecfe">
+                      <SHORT-NAME>PduTrSignalIPdu6</SHORT-NAME>
+                      <I-PDU-PORT-REFS>
+                        <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/IPduPort_Out</I-PDU-PORT-REF>
+                      </I-PDU-PORT-REFS>
+                      <I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu6</I-PDU-REF>
+                      <I-SIGNAL-TRIGGERINGS>
+                        <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                          <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/VehicleTopology/CAN_ACC/id_can_phys_chan_0825/ISTrisBrakeSwitch3_0</I-SIGNAL-TRIGGERING-REF>
+                        </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                        <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                          <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/VehicleTopology/CAN_ACC/id_can_phys_chan_0825/ISTrisMaintainDistance_0</I-SIGNAL-TRIGGERING-REF>
+                        </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                      </I-SIGNAL-TRIGGERINGS>
+                    </PDU-TRIGGERING>
+                    <PDU-TRIGGERING UUID="3365de23-f6fa-3929-aabc-14a636ac1246">
+                      <SHORT-NAME>PduTrSignalIPdu4</SHORT-NAME>
+                      <I-PDU-PORT-REFS>
+                        <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/IPduPort_In</I-PDU-PORT-REF>
+                      </I-PDU-PORT-REFS>
+                      <I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu4</I-PDU-REF>
+                      <I-SIGNAL-TRIGGERINGS>
+                        <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                          <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/VehicleTopology/CAN_ACC/id_can_phys_chan_0825/ISTrisPositionVelocity_0</I-SIGNAL-TRIGGERING-REF>
+                        </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                      </I-SIGNAL-TRIGGERINGS>
+                    </PDU-TRIGGERING>
+                    <PDU-TRIGGERING UUID="e04bd997-fd24-3489-b992-82de9bacb93d">
+                      <SHORT-NAME>PduTrSignalIPdu8</SHORT-NAME>
+                      <I-PDU-PORT-REFS>
+                        <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECUSystem/ADAS/conn_ADAS_CAN_ACC/IPduPort_In</I-PDU-PORT-REF>
+                      </I-PDU-PORT-REFS>
+                      <I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu8</I-PDU-REF>
+                      <I-SIGNAL-TRIGGERINGS>
+                        <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                          <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/VehicleTopology/CAN_ACC/id_can_phys_chan_0825/ISTrisAccStateTargetSet_0</I-SIGNAL-TRIGGERING-REF>
+                        </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                      </I-SIGNAL-TRIGGERINGS>
+                    </PDU-TRIGGERING>
+                  </PDU-TRIGGERINGS>
+                </CAN-PHYSICAL-CHANNEL>
+              </PHYSICAL-CHANNELS>
+              <PROTOCOL-NAME>CAN</PROTOCOL-NAME>
+              <PROTOCOL-VERSION>CAN11</PROTOCOL-VERSION>
+            </CAN-CLUSTER-CONDITIONAL>
+          </CAN-CLUSTER-VARIANTS>
+        </CAN-CLUSTER>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>Interfaces</SHORT-NAME>
+      <ELEMENTS>
+        <SENDER-RECEIVER-INTERFACE UUID="4954">
+          <SHORT-NAME>Body_ADAS_02_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4957">
+              <SHORT-NAME>Body_ADAS_02_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4989">
+          <SHORT-NAME>Body_ADAS_09_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4992">
+              <SHORT-NAME>Body_ADAS_09_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5009">
+          <SHORT-NAME>BrakeSwitch3_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5012">
+              <SHORT-NAME>BrakeSwitch3_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT5</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5064">
+          <SHORT-NAME>MaintainDistance02_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5067">
+              <SHORT-NAME>MaintainDistance02_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT5</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4949">
+          <SHORT-NAME>AccStateTargetSet_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4952">
+              <SHORT-NAME>AccStateTargetSet_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT5</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4959">
+          <SHORT-NAME>Body_ADAS_03_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4962">
+              <SHORT-NAME>Body_ADAS_03_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4964">
+          <SHORT-NAME>Body_ADAS_04_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4967">
+              <SHORT-NAME>Body_ADAS_04_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4969">
+          <SHORT-NAME>Body_ADAS_05_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4972">
+              <SHORT-NAME>Body_ADAS_05_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4974">
+          <SHORT-NAME>Body_ADAS_06_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4977">
+              <SHORT-NAME>Body_ADAS_06_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4979">
+          <SHORT-NAME>Body_ADAS_07_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4982">
+              <SHORT-NAME>Body_ADAS_07_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="4984">
+          <SHORT-NAME>Body_ADAS_08_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="4987">
+              <SHORT-NAME>Body_ADAS_08_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT20</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5034">
+          <SHORT-NAME>MMI_ADAS_01_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5037">
+              <SHORT-NAME>MMI_ADAS_01_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT10</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5039">
+          <SHORT-NAME>MMI_ADAS_02_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5042">
+              <SHORT-NAME>MMI_ADAS_02_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT10</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5044">
+          <SHORT-NAME>MMI_ADAS_03_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5047">
+              <SHORT-NAME>MMI_ADAS_03_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT10</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5134">
+          <SHORT-NAME>PositionVelocity_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5137">
+              <SHORT-NAME>PositionVelocity_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT5</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5149">
+          <SHORT-NAME>Safety_ADAS_01_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5152">
+              <SHORT-NAME>Safety_ADAS_01_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT8</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5154">
+          <SHORT-NAME>Safety_ADAS_02_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5157">
+              <SHORT-NAME>Safety_ADAS_02_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT4</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5159">
+          <SHORT-NAME>Safety_ADAS_03_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5162">
+              <SHORT-NAME>Safety_ADAS_03_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT4</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="5164">
+          <SHORT-NAME>Safety_ADAS_04_iface</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="5167">
+              <SHORT-NAME>Safety_ADAS_04_vdp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT4</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>Constants</SHORT-NAME>
+      <ELEMENTS>
+        <CONSTANT-SPECIFICATION UUID="4564">
+          <SHORT-NAME>val_0</SHORT-NAME>
+          <VALUE-SPEC>
+            <APPLICATION-VALUE-SPECIFICATION>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-VALUE-CONT>
+                <SW-VALUES-PHYS>
+                  <VF>0</VF>
+                </SW-VALUES-PHYS>
+              </SW-VALUE-CONT>
+            </APPLICATION-VALUE-SPECIFICATION>
+          </VALUE-SPEC>
+        </CONSTANT-SPECIFICATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>Signal</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM-SIGNAL UUID="15759">
+          <SHORT-NAME>Body_ADAS_02</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15773">
+          <SHORT-NAME>Body_ADAS_09</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15781">
+          <SHORT-NAME>BrakeSwitch3</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15803">
+          <SHORT-NAME>MaintainDistance</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15757">
+          <SHORT-NAME>AccStateTargetSet</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15761">
+          <SHORT-NAME>Body_ADAS_03</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15763">
+          <SHORT-NAME>Body_ADAS_04</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15765">
+          <SHORT-NAME>Body_ADAS_05</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15767">
+          <SHORT-NAME>Body_ADAS_06</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15769">
+          <SHORT-NAME>Body_ADAS_07</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15771">
+          <SHORT-NAME>Body_ADAS_08</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15791">
+          <SHORT-NAME>MMI_ADAS_01</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15793">
+          <SHORT-NAME>MMI_ADAS_02</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15795">
+          <SHORT-NAME>MMI_ADAS_03</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15831">
+          <SHORT-NAME>PositionVelocity</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15837">
+          <SHORT-NAME>Safety_ADAS_01</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15839">
+          <SHORT-NAME>Safety_ADAS_02</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15841">
+          <SHORT-NAME>Safety_ADAS_03</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+        <SYSTEM-SIGNAL UUID="15843">
+          <SHORT-NAME>Safety_ADAS_04</SHORT-NAME>
+          <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+        </SYSTEM-SIGNAL>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="e6312634-a7f2-36bf-9b27-94669c45bb2a">
+      <SHORT-NAME>Communication</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="fec794a1-3db6-3303-913f-6fa406e557a0">
+          <SHORT-NAME>Frame</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-FRAME UUID="bf3601b6-df98-4610-974d-590209bffd29">
+              <SHORT-NAME>ADAS_ACC_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="f9339c4e-4777-308e-92a6-4fac2c1248f3">
+                  <SHORT-NAME>SignalIPdu6_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu6</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME UUID="c6c6c864-2cb7-4863-9998-d522de8a2121">
+              <SHORT-NAME>Radar_to_ADAS_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="86051e10-318c-3746-8479-8c5c8190fb8a">
+                  <SHORT-NAME>SignalIPdu4_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu4</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME UUID="82ebc4b8-e169-4fa1-9262-00cbeb967a81">
+              <SHORT-NAME>PowertrainB_to_ADAS_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="c6f6962c-f824-3b0d-8474-db43e3f72259">
+                  <SHORT-NAME>SignalIPdu8_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu8</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME UUID="e245f32b-e1dd-46db-98ff-87044fbf6dd5">
+              <SHORT-NAME>ADAS_BODY_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="e87752bc-5689-30b4-8b7e-d370a7f868b5">
+                  <SHORT-NAME>SignalIPdu7_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu7</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME UUID="08b16f01-45fa-4691-b9f9-0fdcf02b5304">
+              <SHORT-NAME>BodyRear_to_ADAS_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="7d5169e7-32cd-33d2-a29b-468807bbd430">
+                  <SHORT-NAME>SignalIPdu1_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu1</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME UUID="4ea08b8a-ffea-472f-854f-29c5d057a1ce">
+              <SHORT-NAME>Body_to_ADAS_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="febe1b64-346c-35b2-b869-5a62782ec1fe">
+                  <SHORT-NAME>SignalIPdu2_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu2</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME UUID="8c8099b6-4726-454d-9b51-c8a0653cf5db">
+              <SHORT-NAME>MMI_to_ADAS_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="fc0e09e5-293b-319c-ab10-01b7e3318564">
+                  <SHORT-NAME>SignalIPdu3_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu3</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME UUID="f1527d14-ef02-4332-b153-612337417490">
+              <SHORT-NAME>Safety_to_ADAS_Frame</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING UUID="16543ea7-5324-3d36-b6e0-d41be0089a7e">
+                  <SHORT-NAME>SignalIPdu5_map</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu5</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="49db0fe7-557e-35c3-a857-e896ba56d8ea">
+          <SHORT-NAME>Pdu</SHORT-NAME>
+          <ELEMENTS>
+            <I-SIGNAL-I-PDU UUID="0d7b79c4-5c9e-4a10-a0b7-5509f51c09b7">
+              <SHORT-NAME>SignalIPdu6</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-CONDITIONS>
+                      <TRANSMISSION-MODE-CONDITION>
+                        <DATA-FILTER>
+                          <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                        </DATA-FILTER>
+                        <I-SIGNAL-IN-I-PDU-REF DEST="I-SIGNAL-TO-I-PDU-MAPPING">/Communication/Pdu/SignalIPdu6/isMaintainDistance_mtx</I-SIGNAL-IN-I-PDU-REF>
+                      </TRANSMISSION-MODE-CONDITION>
+                    </TRANSMISSION-MODE-CONDITIONS>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-OFFSET>
+                          <VALUE>0.0</VALUE>
+                        </TIME-OFFSET>
+                        <TIME-PERIOD>
+                          <VALUE>0.01</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="ba544e53-cf51-3fd9-8ca8-13f0c8df3c7e">
+                  <SHORT-NAME>isBrakeSwitch3_mtx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBrakeSwitch3</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="9d9e0ba1-21a3-308e-9cfd-9dcd1daa7150">
+                  <SHORT-NAME>isMaintainDistance_mtx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isMaintainDistance</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>2</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="a8a8cb05-06da-45ac-8f3c-3e69c4ed1c55">
+              <SHORT-NAME>SignalIPdu4</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="MGC">
+                    <SD GID="rxMode">DeferredInCom</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <LENGTH>8</LENGTH>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="4461369f-e0c6-3912-a178-93d824fb9596">
+                  <SHORT-NAME>isPositionVelocity_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isPositionVelocity</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="f1220274-9f5a-48dd-9775-1aba638e4699">
+              <SHORT-NAME>SignalIPdu8</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="MGC">
+                    <SD GID="rxMode">DeferredInCom</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <LENGTH>8</LENGTH>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="c7bcd1e5-18d5-3d77-b298-dd317855da85">
+                  <SHORT-NAME>isAccStateTargetSet_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isAccStateTargetSet</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="ed71c60a-be01-45c2-8a02-8ad42c7c1c21">
+              <SHORT-NAME>SignalIPdu7</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-CONDITIONS>
+                      <TRANSMISSION-MODE-CONDITION>
+                        <DATA-FILTER>
+                          <DATA-FILTER-TYPE>ALWAYS</DATA-FILTER-TYPE>
+                        </DATA-FILTER>
+                        <I-SIGNAL-IN-I-PDU-REF DEST="I-SIGNAL-TO-I-PDU-MAPPING">/Communication/Pdu/SignalIPdu7/isBody_ADAS_02_mtx</I-SIGNAL-IN-I-PDU-REF>
+                      </TRANSMISSION-MODE-CONDITION>
+                    </TRANSMISSION-MODE-CONDITIONS>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-OFFSET>
+                          <VALUE>0.0</VALUE>
+                        </TIME-OFFSET>
+                        <TIME-PERIOD>
+                          <VALUE>0.01</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="dc78c544-ed06-3062-a5cf-d538e7f08dfc">
+                  <SHORT-NAME>isBody_ADAS_02_mtx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_02</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="f8b7b0cb-86f9-3ecc-8e40-8e463a99815c">
+                  <SHORT-NAME>isBody_ADAS_09_mtx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_09</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>19</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="498217ab-2523-4a92-ac19-27836b358a3b">
+              <SHORT-NAME>SignalIPdu1</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="MGC">
+                    <SD GID="rxMode">DeferredInCom</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <LENGTH>8</LENGTH>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="7c16d356-3408-365d-8dbd-f7bc55687297">
+                  <SHORT-NAME>isBody_ADAS_03_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_03</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="7e7db576-0b3c-3655-a70e-8d9fdc28fc1f">
+                  <SHORT-NAME>isBody_ADAS_04_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_04</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>19</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="bf2076bc-9630-3fd7-960a-4b5c6cd160b5">
+                  <SHORT-NAME>isBody_ADAS_05_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_05</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>47</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="4d805487-e7fe-488d-b3ca-68a920f0796b">
+              <SHORT-NAME>SignalIPdu2</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="MGC">
+                    <SD GID="rxMode">DeferredInCom</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <LENGTH>8</LENGTH>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="b28860e1-924c-3f53-adb1-3aac93df6a9f">
+                  <SHORT-NAME>isBody_ADAS_06_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_06</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="42ff245f-4e1d-3cd4-a49c-6dd88abd2099">
+                  <SHORT-NAME>isBody_ADAS_07_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_07</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>19</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="c2c6886b-f124-33dc-93ea-72c47d529cc9">
+                  <SHORT-NAME>isBody_ADAS_08_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isBody_ADAS_08</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>47</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="22d88ec4-4dd7-4389-b6b7-5cefac3e45c9">
+              <SHORT-NAME>SignalIPdu3</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="MGC">
+                    <SD GID="rxMode">DeferredInCom</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <LENGTH>8</LENGTH>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="944a9f38-c2e1-3749-827e-887ab97f6fe6">
+                  <SHORT-NAME>isMMI_ADAS_01_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isMMI_ADAS_01</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="32f9ebdc-f777-3b6c-9fd8-55720be18775">
+                  <SHORT-NAME>isMMI_ADAS_02_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isMMI_ADAS_02</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>13</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="32875404-2bbf-331d-be15-22ab48dfee23">
+                  <SHORT-NAME>isMMI_ADAS_03_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isMMI_ADAS_03</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>19</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+            <I-SIGNAL-I-PDU UUID="a661d090-76e9-4ce5-99da-46dc84dc9025">
+              <SHORT-NAME>SignalIPdu5</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="MGC">
+                    <SD GID="rxMode">DeferredInCom</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <LENGTH>8</LENGTH>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="087645aa-44e4-324a-9581-eefcfe518def">
+                  <SHORT-NAME>isSafety_ADAS_01_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_01</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="507ab65b-3801-31a0-bafc-c0248e70bb3d">
+                  <SHORT-NAME>isSafety_ADAS_02_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_02</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>15</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="e2ffe835-3824-33c7-b144-f9c90ef724a5">
+                  <SHORT-NAME>isSafety_ADAS_03_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_03</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>11</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+                <I-SIGNAL-TO-I-PDU-MAPPING UUID="555ef8d7-f91f-35cf-ab99-5d7094434cc0">
+                  <SHORT-NAME>isSafety_ADAS_04_mrx</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/Communication/ISignal/isSafety_ADAS_04</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <START-POSITION>23</START-POSITION>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+              </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="bb6116bf-8954-3cb4-92c2-c91489eb50f4">
+          <SHORT-NAME>ISignal</SHORT-NAME>
+          <ELEMENTS>
+            <I-SIGNAL UUID="6f0847e6-4340-387b-9348-cd661779caed">
+              <SHORT-NAME>isBrakeSwitch3</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>5</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT5</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/BrakeSwitch3</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="b2a9d244-770a-37f8-9a44-d2695c5bada9">
+              <SHORT-NAME>isMaintainDistance</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>5</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT5</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MaintainDistance</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="2516490e-d3d9-3840-8bb0-a6d4a4aba860">
+              <SHORT-NAME>isPositionVelocity</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>5</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT5</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/PositionVelocity</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="bac7f60f-d031-3cff-8d96-da82b64c4b9c">
+              <SHORT-NAME>isAccStateTargetSet</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>5</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT5</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/AccStateTargetSet</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="777493b4-74a0-3297-94d0-5ade9b102d45">
+              <SHORT-NAME>isBody_ADAS_02</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_02</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="209bcf48-f9c2-3607-bb04-f6a26d0a57e6">
+              <SHORT-NAME>isBody_ADAS_09</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_09</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="69f0be38-fff8-31de-9364-6adbae7bee2d">
+              <SHORT-NAME>isBody_ADAS_03</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_03</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="053cbfda-3210-3ce3-a3af-f20348bc102d">
+              <SHORT-NAME>isBody_ADAS_04</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_04</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="9e46b1c8-e893-3207-8e53-e8112b6c0ded">
+              <SHORT-NAME>isBody_ADAS_05</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_05</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="1da33b0a-e756-3322-aa5a-1d573b88556c">
+              <SHORT-NAME>isBody_ADAS_06</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_06</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="cd885208-a600-3c42-92d1-b6e2c6ff2b29">
+              <SHORT-NAME>isBody_ADAS_07</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_07</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="99048cd4-1890-3d1c-bc94-df3c3bd601a9">
+              <SHORT-NAME>isBody_ADAS_08</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>20</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT20</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Body_ADAS_08</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="fd7a3d30-b7a0-3984-b3eb-807687a06ee5">
+              <SHORT-NAME>isMMI_ADAS_01</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>10</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT10</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MMI_ADAS_01</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="605099dd-eb53-3212-85d0-64378e42acaa">
+              <SHORT-NAME>isMMI_ADAS_02</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>10</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT10</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MMI_ADAS_02</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="0df7aee0-57c6-3080-981f-97354de255c1">
+              <SHORT-NAME>isMMI_ADAS_03</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>10</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT10</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/MMI_ADAS_03</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="0b24e46b-f6b9-3221-a8be-457bc6dedfb2">
+              <SHORT-NAME>isSafety_ADAS_01</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>8</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT8</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_01</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="9d4a090e-918e-3b92-a446-ec1d4983e6b7">
+              <SHORT-NAME>isSafety_ADAS_02</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>4</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT4</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_02</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="46ec637b-b73b-3908-90d0-7e752695185c">
+              <SHORT-NAME>isSafety_ADAS_03</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>4</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT4</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_03</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL UUID="2f8d44a4-07e0-33f9-855a-a3aa90abb0e8">
+              <SHORT-NAME>isSafety_ADAS_04</SHORT-NAME>
+              <DATA-TYPE-POLICY>NETWORK-REPRESENTATION-FROM-COM-SPEC</DATA-TYPE-POLICY>
+              <INIT-VALUE>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </INIT-VALUE>
+              <LENGTH>4</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataType/DataTypeSemantics/SwBaseTypes/UINT4</BASE-TYPE-REF>
+                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataType/DataTypeSemantics/id_compu_meth_0001</COMPU-METHOD-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/Signal/Safety_ADAS_04</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="6b1613c9-594a-3935-a302-aaf7dde070a2">
+          <SHORT-NAME>ISignalPduGroup</SHORT-NAME>
+          <ELEMENTS>
+            <I-SIGNAL-I-PDU-GROUP UUID="bcc5d39f-d3ac-4748-aab2-ef666f77d2e7">
+              <SHORT-NAME>TxMPG_ctrl_ADAS_CAN_BODY</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>tx</COMMUNICATION-MODE>
+              <CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+                <CONTAINED-I-SIGNAL-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxSPG_ctrl_ADAS_CAN_BODY</CONTAINED-I-SIGNAL-I-PDU-GROUP-REF>
+              </CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="cc4307d6-1614-428d-a930-7f612a5573e2">
+              <SHORT-NAME>TxSPG_ctrl_ADAS_CAN_BODY</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>tx</COMMUNICATION-MODE>
+              <I-SIGNAL-I-PDUS>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu7</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+              </I-SIGNAL-I-PDUS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="7d575beb-ea72-438d-aebe-68b61134b72e">
+              <SHORT-NAME>TxMPG_ctrl_ADAS_CAN_ACC</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>tx</COMMUNICATION-MODE>
+              <CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+                <CONTAINED-I-SIGNAL-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/TxSPG_ctrl_ADAS_CAN_ACC</CONTAINED-I-SIGNAL-I-PDU-GROUP-REF>
+              </CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="05cde138-f778-42e9-8d2e-a3c70ae0ac4d">
+              <SHORT-NAME>TxSPG_ctrl_ADAS_CAN_ACC</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>tx</COMMUNICATION-MODE>
+              <I-SIGNAL-I-PDUS>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu6</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+              </I-SIGNAL-I-PDUS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="b6c562e0-5ace-4e8a-86ec-b8a1a82ee5d4">
+              <SHORT-NAME>RxMPG_ctrl_ADAS_CAN_BODY</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>rx</COMMUNICATION-MODE>
+              <CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+                <CONTAINED-I-SIGNAL-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxSPG_ctrl_ADAS_CAN_BODY</CONTAINED-I-SIGNAL-I-PDU-GROUP-REF>
+              </CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="0e973287-06d7-47e2-97a9-04c4f0d0c373">
+              <SHORT-NAME>RxSPG_ctrl_ADAS_CAN_BODY</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>rx</COMMUNICATION-MODE>
+              <I-SIGNAL-I-PDUS>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu3</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu2</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu1</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+              </I-SIGNAL-I-PDUS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="e87a90d8-f542-4557-81b2-553097706bf2">
+              <SHORT-NAME>RxMPG_ctrl_ADAS_CAN_SAFETY</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>rx</COMMUNICATION-MODE>
+              <CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+                <CONTAINED-I-SIGNAL-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxSPG_ctrl_ADAS_CAN_SAFETY</CONTAINED-I-SIGNAL-I-PDU-GROUP-REF>
+              </CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="bc79bae4-08da-4d6f-8494-f640931fa134">
+              <SHORT-NAME>RxSPG_ctrl_ADAS_CAN_SAFETY</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>rx</COMMUNICATION-MODE>
+              <I-SIGNAL-I-PDUS>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu5</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+              </I-SIGNAL-I-PDUS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="45b2ec51-377d-4e75-8d10-c775f6abc0b1">
+              <SHORT-NAME>RxMPG_ctrl_ADAS_CAN_ACC</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>rx</COMMUNICATION-MODE>
+              <CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+                <CONTAINED-I-SIGNAL-I-PDU-GROUP-REF DEST="I-SIGNAL-I-PDU-GROUP">/Communication/ISignalPduGroup/RxSPG_ctrl_ADAS_CAN_ACC</CONTAINED-I-SIGNAL-I-PDU-GROUP-REF>
+              </CONTAINED-I-SIGNAL-I-PDU-GROUP-REFS>
+            </I-SIGNAL-I-PDU-GROUP>
+            <I-SIGNAL-I-PDU-GROUP UUID="3d29fa7c-3f09-41f5-9217-2c753c41b46d">
+              <SHORT-NAME>RxSPG_ctrl_ADAS_CAN_ACC</SHORT-NAME>
+              <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+              <COMMUNICATION-MODE>rx</COMMUNICATION-MODE>
+              <I-SIGNAL-I-PDUS>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu8</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                <I-SIGNAL-I-PDU-REF-CONDITIONAL>
+                  <I-SIGNAL-I-PDU-REF DEST="I-SIGNAL-I-PDU">/Communication/Pdu/SignalIPdu4</I-SIGNAL-I-PDU-REF>
+                </I-SIGNAL-I-PDU-REF-CONDITIONAL>
+              </I-SIGNAL-I-PDUS>
+            </I-SIGNAL-I-PDU-GROUP>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

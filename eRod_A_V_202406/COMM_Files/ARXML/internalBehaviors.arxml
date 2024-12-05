@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-2-2.xsd http://autosar.org/schema/r4.2 autosar_4-2-2.xsd http://www.w3.org/XML/1998/namespace xml.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ComponentType</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ApplicationSwComponentType</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_ACC_CONTROLLER</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_ACC_CONTROLLER</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataType/DataTypeMappingSet/id_data_type_map_set_0002</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="eeaf7669-eeac-4164-a1b4-8796ce4e70c7">
+                      <SHORT-NAME>TimingEvent</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/brakeCheck</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                    <TIMING-EVENT UUID="7afcc222-fa53-4224-96fa-5c74d49974bd">
+                      <SHORT-NAME>TimingEvent1</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/brakeCompute</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                    <TIMING-EVENT UUID="6cd416b7-db77-4af0-b1d9-ea6e8ed4cd7e">
+                      <SHORT-NAME>TimingEvent2</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/velDifCompute</START-ON-EVENT-REF>
+                      <PERIOD>0.01</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                    <VARIABLE-DATA-PROTOTYPE UUID="">
+                      <SHORT-NAME>irv_difFac</SHORT-NAME>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_UINT5</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE UUID="">
+                      <SHORT-NAME>irv_if_velDif</SHORT-NAME>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_BOOL</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE UUID="">
+                      <SHORT-NAME>irv2_if_AH</SHORT-NAME>
+                      <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/DataType/ApplicationPrimitiveDataTypes/dt_id_compu_meth_0001_BOOL</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </EXPLICIT-INTER-RUNNABLE-VARIABLES>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY>
+                      <SHORT-NAME>brakeCheck</SHORT-NAME>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>AccVel_set</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/ReceiverOfAccCtrl2</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/AccStateTargetSet_iface/AccStateTargetSet_vdp</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>posVel_in</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/ReceiverOfAccCtrl3</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/PositionVelocity_iface/PositionVelocity_vdp</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <SYMBOL>brakeCheck</SYMBOL>
+                      <WRITTEN-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>velDiff</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/irv_if_velDif</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </WRITTEN-LOCAL-VARIABLES>
+                    </RUNNABLE-ENTITY>
+                    <RUNNABLE-ENTITY>
+                      <SHORT-NAME>velDifCompute</SHORT-NAME>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>posVel_in</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/ReceiverOfAccCtrl3</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/PositionVelocity_iface/PositionVelocity_vdp</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>AccVel_set_in</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/ReceiverOfAccCtrl2</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/AccStateTargetSet_iface/AccStateTargetSet_vdp</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <READ-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>velDiff_in</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/irv_if_velDif</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </READ-LOCAL-VARIABLES>
+                      <SYMBOL>velDifCompute</SYMBOL>
+                      <WRITTEN-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>difFactor</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/irv_difFac</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>AccsetHigh</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/irv2_if_AH</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </WRITTEN-LOCAL-VARIABLES>
+                    </RUNNABLE-ENTITY>
+                    <RUNNABLE-ENTITY>
+                      <SHORT-NAME>brakeCompute</SHORT-NAME>
+                      <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                      <DATA-READ-ACCESSS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>AccVel_set</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/ReceiverOfAccCtrl2</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/AccStateTargetSet_iface/AccStateTargetSet_vdp</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-READ-ACCESSS>
+                      <DATA-WRITE-ACCESSS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>brakeSwitch3</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/SenderOfAccCtrl1</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/BrakeSwitch3_iface/BrakeSwitch3_vdp</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-WRITE-ACCESSS>
+                      <READ-LOCAL-VARIABLES>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>difFactor_in</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/irv_difFac</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                        <VARIABLE-ACCESS>
+                          <SHORT-NAME>noHigh_002</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <LOCAL-VARIABLE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER/irv2_if_AH</LOCAL-VARIABLE-REF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </READ-LOCAL-VARIABLES>
+                      <SYMBOL>brakeCompute</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_ADAS_RaiseDistanceWarning</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_ADAS_RaiseDistanceWarning</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_AudioBase</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_AudioBase</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_DetectDistance</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_DetectDistance</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F1_Powertrain</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F1_Powertrain</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F2_Chassis</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F2_Chassis</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F3_Safety</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F3_Safety</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F4_MMI</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F4_MMI</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F5_BodyA</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F5_BodyA</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F5_BodyB</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F5_BodyB</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F5_BodyC</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F5_BodyC</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_F6_ADAS</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_F6_ADAS</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataType/DataTypeMappingSet/id_data_type_map_set_0002</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_MaintainDistance</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_MaintainDistance</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataType/DataTypeMappingSet/id_data_type_map_set_0002</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_ObstacleDetection</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_ObstacleDetection</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_PowerTrain_Control</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_PowerTrain_Control</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_Radar</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_Radar</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_Sensor_Fusion_Software</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_Sensor_Fusion_Software</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_VehicleStatus</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_VehicleStatus</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>appswc_Warn_LCD</SHORT-NAME>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR>
+                  <SHORT-NAME>IB_appswc_Warn_LCD</SHORT-NAME>
+                  <DATA-TYPE-MAPPING-REFS>
+                    <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DTMS/DTMS_DataTypeMappingSet</DATA-TYPE-MAPPING-REF>
+                  </DATA-TYPE-MAPPING-REFS>
+                  <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <SWC-IMPLEMENTATION UUID="6c206f4c-3fd9-4b30-aa43-5e5710ee29cc">
+              <SHORT-NAME>Impl_appswc_ACC_CONTROLLER</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="2074d1d1-9804-424d-8ebd-0253e3ad8b9a">
+                  <SHORT-NAME>Code_appswc_ACC_CONTROLLER</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>appswc_ACC_CONTROLLER</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="83d7ae31-de46-4cba-97db-1d821eb2242c">
+                <SHORT-NAME>ResConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <SW-VERSION>1.0.0</SW-VERSION>
+              <VENDOR-ID>31</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentType/ApplicationSwComponentType/appswc_ACC_CONTROLLER/IB_appswc_ACC_CONTROLLER</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+            <SWC-IMPLEMENTATION UUID="7a365b31-29de-4b5e-964f-daee072aac80">
+              <SHORT-NAME>Impl_appswc_F6_ADAS</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="201c0b62-0d8b-44fb-b946-437c79baa332">
+                  <SHORT-NAME>Code_appswc_F6_ADAS</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>appswc_F6_ADAS</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="6be62147-277a-434a-b619-9ca8f2011843">
+                <SHORT-NAME>ResConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <SW-VERSION>1.0.0</SW-VERSION>
+              <VENDOR-ID>31</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentType/ApplicationSwComponentType/appswc_F6_ADAS/IB_appswc_F6_ADAS</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+            <SWC-IMPLEMENTATION UUID="d40d4b66-74b2-47a7-9b53-059ac3f55be3">
+              <SHORT-NAME>Impl_appswc_MaintainDistance</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE UUID="e809104d-6318-4c59-9f81-2bc9f948d26e">
+                  <SHORT-NAME>Code_appswc_MaintainDistance</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>appswc_MaintainDistance</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION UUID="c78e5792-b626-4dae-bcc0-28550e7e785c">
+                <SHORT-NAME>ResConsumption</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <SW-VERSION>1.0.0</SW-VERSION>
+              <VENDOR-ID>31</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentType/ApplicationSwComponentType/appswc_MaintainDistance/IB_appswc_MaintainDistance</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,90 @@
+// *************************************************************************** *
+// *                                                                           *
+// * Description:         CANDB File                                           *
+// * Generated at:        2023-03-30 11:45                                     *
+// * System:              ComSystem                                            *
+// * Network:             CAN_ACC                                              *
+// *                                                                           *
+// *************************************************************************** *
+
+
+VERSION "CAN_ACC"
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_ :
+
+BU_ :  ADAS
+
+BO_ 261 ADAS_ACC_Frame : 8 ADAS
+ SG_ BrakeSwitch3 : 7|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ MaintainDistance : 2|5@0+ (1,0) [0|31] "" Vector__XXX
+
+
+// Attribute definitions
+BA_DEF_  "Baudrate" FLOAT 1000 1000000; // [bps]
+BA_DEF_  "BusType" STRING;
+BA_DEF_  "DBName" STRING;
+BA_DEF_  "ProtocolType" STRING;
+BA_DEF_ BU_ "NmAsrNode" ENUM "No","Yes";
+BA_DEF_ BU_ "NmAsrNodeIdentifier" INT 0 255;
+BA_DEF_ BO_ "GenMsgCycleTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgCycleTimeFast" FLOAT 0 300000;
+BA_DEF_ BO_ "GenMsgDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 100000;
+BA_DEF_ BO_ "GenMsgSendType" ENUM "cyclic","spontaneous","cyclicIfActive","spontaneousWithDelay","cyclicAndSpontaneous","cyclicAndSpontaneousWithDelay","IfActive","NoMsgSendType"; // [us]
+BA_DEF_ BO_ "GenMsgStartDelayTime" FLOAT 0 300000; // [ms]
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_ "GenSigStartValue" FLOAT -1.7976931348623157E308 18446744073709551615;
+
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "ProtocolType" "";
+BA_DEF_DEF_ "NmAsrNode" "No";
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "GenSigSendType" "Cyclic";
+
+// Network
+BA_ "Baudrate" 500000;
+BA_ "BusType" "CAN";
+BA_ "DBName" "CAN_ACC";
+BA_ "ProtocolType" "CAN";
+// Frame: ADAS_ACC_Frame
+BA_ "GenMsgCycleTime" BO_ 261 10.000;
+BA_ "GenMsgSendType" BO_ 261 0;
+BA_ "GenMsgStartDelayTime" BO_ 261 0.000;
+BA_ "GenSigStartValue" SG_ 261 BrakeSwitch3 0;
+BA_ "GenSigStartValue" SG_ 261 MaintainDistance 0;
+
+
+
