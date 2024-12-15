@@ -10087,7 +10087,8 @@
                   id="006babba-95dd-4fe6-879b-0f336db9644f" name="CP 5" orientation="OUT"
                   kind="FLOW"/>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                  id="a14015d2-eab4-488e-a7c0-da8b1d21edaa" name="Brake Master Cylinder">
+                  id="a14015d2-eab4-488e-a7c0-da8b1d21edaa" name="Brake Master Cylinder"
+                  description="&lt;p>The brake master cylinder transform mechanical force to hydraulic pressure.&lt;/p>&#xA;">
                 <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                     id="60debbc8-18c2-4b41-9ecd-e9ba72a43bc0" targetElement="#b3f22b3a-d021-42d4-906e-b491abfbbfce"
                     sourceElement="#a14015d2-eab4-488e-a7c0-da8b1d21edaa"/>
