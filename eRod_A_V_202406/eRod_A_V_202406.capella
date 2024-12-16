@@ -6703,7 +6703,8 @@
                   sourceElement="#277a8fe7-b4cc-4866-a987-5c69854ba78a"/>
             </inputs>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="b3f22b3a-d021-42d4-906e-b491abfbbfce" name="Converts mechanical to hydaulic">
+                id="b3f22b3a-d021-42d4-906e-b491abfbbfce" name="Converts mechanical to hydaulic"
+                description="&lt;p>Converts the force of pedal to force on hydraulic fluid.&lt;/p>&#xA;">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="ea157c15-a79a-4dd5-bb55-c4847b8c4033" name="FIP 1"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -7010,7 +7011,7 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="70ea44cb-2cac-4ab6-9e42-663cad217088" name="Wear Indication"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="c050c86d-b51b-4e8b-aa9b-db57fd6727d8" name="Detect Level"/>
+              id="c050c86d-b51b-4e8b-aa9b-db57fd6727d8" name="Detect Level" description="&lt;p>Detect Fluid Levels&lt;/p>&#xA;"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="03d47b4f-efa1-4f55-a5bf-71da87166e97" name="Wear Indication"/>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
@@ -10096,22 +10097,25 @@
                     id="c4864230-fcd9-4673-9154-b5feed41772c" targetElement="#c050c86d-b51b-4e8b-aa9b-db57fd6727d8"
                     sourceElement="#a14015d2-eab4-488e-a7c0-da8b1d21edaa"/>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="537e6201-c0ef-467d-89ab-701af3de1b8e" name="CP 1" orientation="IN"
-                    kind="FLOW">
+                    id="537e6201-c0ef-467d-89ab-701af3de1b8e" name="Mech Force In"
+                    description="&lt;p>Mechanical Force from the break pedal.&lt;/p>&#xA;"
+                    orientation="IN" kind="FLOW">
                   <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                       id="b1844e77-e019-4556-8305-82dd1f5be055" targetElement="#ea157c15-a79a-4dd5-bb55-c4847b8c4033"
                       sourceElement="#537e6201-c0ef-467d-89ab-701af3de1b8e"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="6a7538ec-6842-4bcf-bfc7-5ba1783ab07c" name="CP 2" orientation="OUT"
-                    kind="FLOW">
+                    id="6a7538ec-6842-4bcf-bfc7-5ba1783ab07c" name="Hydraulic Force Out"
+                    description="&lt;p>The mechanical force converted to hydraulic force.&lt;/p>&#xA;"
+                    orientation="OUT" kind="FLOW">
                   <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                       id="a27b4bb4-accc-406c-8118-80cad527040c" targetElement="#5a2eec17-b795-4854-8bb3-cc0cdc3c9cb1"
                       sourceElement="#6a7538ec-6842-4bcf-bfc7-5ba1783ab07c"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="3870b55f-bc73-47b1-b4b5-cf2100f444c4" name="CP 3" orientation="IN"
-                    kind="FLOW"/>
+                    id="3870b55f-bc73-47b1-b4b5-cf2100f444c4" name="Environment Forces"
+                    description="&lt;p>Flow of environmental impact to component.&lt;/p>&#xA;"
+                    orientation="IN" kind="FLOW"/>
               </ownedLogicalComponents>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                   id="b258bb45-46fb-489a-8785-db254f53ee6e" name="Brake Lines and Fluid">
