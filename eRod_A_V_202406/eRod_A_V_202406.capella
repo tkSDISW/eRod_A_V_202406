@@ -7676,7 +7676,7 @@
               id="51144162-dc90-4a48-954c-1b6fe8700417" name="Wheel Speed" target="#30baf76a-7ea3-470b-920b-183d07a121b1"
               source="#a772b26d-e460-4077-bdcc-0d980f1cf750"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="0b2c0d5a-6147-450f-9267-c09353118b70" name="Wheel Speeds" target="#bcb0203f-b05b-4eb8-9132-a10295ca73f5"
+              id="0b2c0d5a-6147-450f-9267-c09353118b70" name="ABS Controller" target="#bcb0203f-b05b-4eb8-9132-a10295ca73f5"
               source="#2edc73a5-c826-4d7c-a585-4be7b1bc93e8" exchangedItems="#7ce6e55b-1431-41bc-8494-e921b32da00b"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="a56a6e62-c737-4e6f-93ae-945f6b166175" name="Wheel Speed" target="#4ed160a1-b9ed-42c7-bb6c-28e9e0100de8"
@@ -10141,7 +10141,17 @@
                     kind="FLOW"/>
               </ownedLogicalComponents>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                  id="848c5b11-bef9-474d-b3b6-c84420b97d51" name="Hydraulic Control Modulator">
+                  id="848c5b11-bef9-474d-b3b6-c84420b97d51" name="Hydraulic Control Modulator"
+                  appliedPropertyValueGroups="#1f431556-36fc-4ea5-b132-f169ffb63ed9">
+                <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
+                    id="1f431556-36fc-4ea5-b132-f169ffb63ed9" name="Bore Size">
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                      id="158f7e55-4253-4aa8-acf0-d79a29856a65" name="Units" value="Inches"/>
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
+                      id="eac00f5f-5dac-41c8-a8af-6aa227a58fd8" name="Max" value="1.0"/>
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
+                      id="427ec3b7-ca0b-4b99-b3db-dd601210f14b" name="Min" value="0.625"/>
+                </ownedPropertyValueGroups>
                 <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                     id="fe88eb94-46f3-484e-aea1-c873bb4fd048" targetElement="#99828fa3-997e-49d4-a21a-8ed81a8506ba"
                     sourceElement="#848c5b11-bef9-474d-b3b6-c84420b97d51"/>
