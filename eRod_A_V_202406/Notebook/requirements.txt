@@ -1,0 +1,14 @@
+capellambse
+# Jinja
+vsdx
+python-pptx
+openpyxl
+XlsxWriter
+polarion
+ipywidgets
+openai
+# --upgrade --ignore-installed blinker
+#flask
+#requests
+capellambse_context_diagrams
+cairosvg
