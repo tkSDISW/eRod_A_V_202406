@@ -11081,6 +11081,34 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="0a1450f7-6aaf-4184-a6c2-f9a55e6ef27c" targetElement="#ccc239e4-d291-43f9-9ec2-fa5adad7aa67"
                   sourceElement="#0b91855a-4cd9-4017-b9cb-cc58f8d8bcab"/>
+              <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+                  id="8bbf7830-b15f-4c18-8246-d7d62f5b4a3a" name="Brake Pedal State Machine">
+                <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                    id="b9e8d4ca-df75-4333-a321-d7153422c56c" name="Default Region"
+                    involvedStates="#0ba3d0af-f11f-4372-9806-4c0d5bcef28a #1a92a728-76a3-4e7c-a11a-654f9ba3b008 #bdfe1d01-1268-401d-bb76-f018ec8c85c2">
+                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:InitialPseudoState"
+                      id="0ba3d0af-f11f-4372-9806-4c0d5bcef28a" name="Initial"/>
+                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                      id="1a92a728-76a3-4e7c-a11a-654f9ba3b008" name="Not Depressed">
+                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                        id="306c1d14-69e8-4026-a5f3-a9de7b86a36e" name="region"/>
+                  </ownedStates>
+                  <ownedStates xsi:type="org.polarsys.capella.core.data.capellacommon:State"
+                      id="bdfe1d01-1268-401d-bb76-f018ec8c85c2" name="Depressed" doActivity="#ccc239e4-d291-43f9-9ec2-fa5adad7aa67">
+                    <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+                        id="58b4b458-0a50-4c12-b08c-fd631d608131" name="region"/>
+                  </ownedStates>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="baad2b18-8993-487b-a9dc-5fff219e2fdc" triggerDescription=""
+                      source="#0ba3d0af-f11f-4372-9806-4c0d5bcef28a" target="#1a92a728-76a3-4e7c-a11a-654f9ba3b008"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="2c2653b0-374b-410c-bc3d-cddb84f2b3f4" triggerDescription="Brake Applied"
+                      source="#1a92a728-76a3-4e7c-a11a-654f9ba3b008" target="#bdfe1d01-1268-401d-bb76-f018ec8c85c2"/>
+                  <ownedTransitions xsi:type="org.polarsys.capella.core.data.capellacommon:StateTransition"
+                      id="ba11f1db-71f0-4437-a0bc-306f8e6e8ec4" triggerDescription="Brake Released"
+                      source="#bdfe1d01-1268-401d-bb76-f018ec8c85c2" target="#1a92a728-76a3-4e7c-a11a-654f9ba3b008"/>
+                </ownedRegions>
+              </ownedStateMachines>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="66ba6438-5c53-4cdb-bfa6-5e48f37cde27" name="CP 1" orientation="IN"
                   kind="FLOW">
