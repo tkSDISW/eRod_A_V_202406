@@ -10089,7 +10089,17 @@
                   kind="FLOW"/>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                   id="a14015d2-eab4-488e-a7c0-da8b1d21edaa" name="Brake Master Cylinder"
-                  description="&lt;p>The brake master cylinder transform mechanical force to hydraulic pressure.&lt;/p>&#xA;">
+                  description="&lt;p>The brake master cylinder transform mechanical force to hydraulic pressure.&lt;/p>&#xA;"
+                  appliedPropertyValueGroups="#1f431556-36fc-4ea5-b132-f169ffb63ed9">
+                <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
+                    id="1f431556-36fc-4ea5-b132-f169ffb63ed9" name="Bore Size">
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                      id="158f7e55-4253-4aa8-acf0-d79a29856a65" name="Units" value="Inches"/>
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
+                      id="eac00f5f-5dac-41c8-a8af-6aa227a58fd8" name="Max" value="1.0"/>
+                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
+                      id="427ec3b7-ca0b-4b99-b3db-dd601210f14b" name="Min" value="0.625"/>
+                </ownedPropertyValueGroups>
                 <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                     id="60debbc8-18c2-4b41-9ecd-e9ba72a43bc0" targetElement="#b3f22b3a-d021-42d4-906e-b491abfbbfce"
                     sourceElement="#a14015d2-eab4-488e-a7c0-da8b1d21edaa"/>
@@ -10141,17 +10151,7 @@
                     kind="FLOW"/>
               </ownedLogicalComponents>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                  id="848c5b11-bef9-474d-b3b6-c84420b97d51" name="Hydraulic Control Modulator"
-                  appliedPropertyValueGroups="#1f431556-36fc-4ea5-b132-f169ffb63ed9">
-                <ownedPropertyValueGroups xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValueGroup"
-                    id="1f431556-36fc-4ea5-b132-f169ffb63ed9" name="Bore Size">
-                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
-                      id="158f7e55-4253-4aa8-acf0-d79a29856a65" name="Units" value="Inches"/>
-                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
-                      id="eac00f5f-5dac-41c8-a8af-6aa227a58fd8" name="Max" value="1.0"/>
-                  <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:FloatPropertyValue"
-                      id="427ec3b7-ca0b-4b99-b3db-dd601210f14b" name="Min" value="0.625"/>
-                </ownedPropertyValueGroups>
+                  id="848c5b11-bef9-474d-b3b6-c84420b97d51" name="Hydraulic Control Modulator">
                 <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                     id="fe88eb94-46f3-484e-aea1-c873bb4fd048" targetElement="#99828fa3-997e-49d4-a21a-8ed81a8506ba"
                     sourceElement="#848c5b11-bef9-474d-b3b6-c84420b97d51"/>
